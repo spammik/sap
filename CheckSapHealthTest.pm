@@ -32,7 +32,7 @@ sub init {
             $self->check_thresholds(metric => $metric, value => $used_percentage), #Funkcia, ktorá kontroluje zadaný threshold s aktuálnou value -> vracia value
             sprintf " %.2f%% použitých", $used_percentage);
     }
-    #my @types = $fc->EXTENDED_MEMORY_USAGE;
+    #my @types = $fc->EXTENDED_MEMORY_USAGE; -> Volanie exportu
     printf "------------------------------------------------------- \n";
     printf "Total: %s\n", ($total.' MB');
     printf "Attached: %.2f%% - %s\n", ($attached/$total*100), $attached.' MB';

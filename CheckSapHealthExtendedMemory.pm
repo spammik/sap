@@ -1,4 +1,3 @@
-﻿
 package MyExtended;
 our @ISA = qw(Classes::SAP::Netweaver::Item);
 use strict;
@@ -42,5 +41,7 @@ sub init {
     #printf "------------------------------------------------------- \n";
     # Percentá a normálna hodnota
     #printf "Used: %s - %.2f%%\n", $used, ($used/$total*100 );
+
+
   }
 }
